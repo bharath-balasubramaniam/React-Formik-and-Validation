@@ -63,6 +63,7 @@ function App() {
         if (values.skills[0] === undefined) {
           errors.skills = "Select the Skills";
         }
+        // eslint-disable-next-line array-callback-return
         Skills.filter((obj) => {
           if (!values[obj]) {
             return (errors[obj] = (
